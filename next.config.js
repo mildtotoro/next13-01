@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -10,10 +10,10 @@ const nextConfig = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
-  }
+  },
 }
 
 module.exports = nextConfig
