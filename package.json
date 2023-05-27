@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.1",
-    "mini-css-extract-plugin": "^2.7.5"
+    "eslint-config-prettier": "^8.8.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prettier": "2.8.8"
   }
 }
