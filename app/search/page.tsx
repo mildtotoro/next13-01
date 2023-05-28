@@ -2,10 +2,7 @@
 import { useState, useEffect } from 'react'
 import LoadingPage from '../loading'
 import PeopleSearch from '../components/PeopleSearch'
-
-const CardPeople = ({ data }: Record<string, any>) => {
-  return <div>{data.name}</div>
-}
+import PeopleCard from '../components/PeopleCard'
 
 const SearchPeoplePage = () => {
   const [peoples, setPeoples] = useState<Record<string, any>[]>([])
@@ -29,8 +26,10 @@ const SearchPeoplePage = () => {
   return (
     <div>
       <PeopleSearch onSearch={(data) => setPeoples(data)} />
-      {peoples.length > 0 &&
-        peoples.map((data) => <CardPeople key={data.name} data={data} />)}
+      <div className="flex flex-wrap">
+        {peoples.length > 0 &&
+          peoples.map((data) => <PeopleCard key={data.name} data={data} />)}
+      </div>
     </div>
   )
 }
