@@ -12,7 +12,7 @@ const Peoples = async () => {
   const peoples = await fetchPeoples()
   return (
     <div className="flex flex-wrap">
-      {peoples.map((people) => {
+      {peoples.map((people: Record<string, any>) => {
         return <PeopleCard key={people.name} data={people} />
       })}
     </div>
