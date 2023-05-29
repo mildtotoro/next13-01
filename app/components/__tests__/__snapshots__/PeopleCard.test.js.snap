@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeopleCard renders a card to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="border border-solid border-gray-300 w-[250px] m-3 p-4"
+  >
+    <h2
+      data-testid="name"
+    >
+      hello
+    </h2>
+    <h3>
+      Birth Year: 19BBY
+    </h3>
+    <a
+      href="https://swapi.dev/api/planets/2/"
+      target="_blank"
+    >
+      Home world
+    </a>
+    <div />
+    <a
+      href="https://swapi.dev/api/people/5/"
+      target="_blank"
+    >
+      Read more
+    </a>
+  </div>
+</DocumentFragment>
+`;
